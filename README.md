@@ -1,15 +1,15 @@
 <div align="center">
 
-# 🛢️ Chevron × Hess — $53B M&A Valuation Analysis
+# 🛢️ Chevron × Hess -$53B M&A Valuation Analysis
 
-**Full investment banking-style valuation and deal analysis of Chevron's acquisition of Hess Corporation — six methodologies, Monte Carlo simulation, LBO, and accretion/dilution modeling, built entirely in Python.**
+**Full investment banking-style valuation and deal analysis of Chevron's acquisition of Hess Corporation -six methodologies, Monte Carlo simulation, LBO, and accretion/dilution modeling, built entirely in Python.**
 
 [![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](LICENSE)
 [![Data](https://img.shields.io/badge/Live_Data-yfinance_%7C_FRED-0077B5?style=for-the-badge)]()
 
-> Replicates the analytical framework of a bulge-bracket M&A pitch book — applied to one of the most strategically significant energy deals of 2023.
+> Replicates the analytical framework of a bulge-bracket M&A pitch book -applied to one of the most strategically significant energy deals of 2023.
 > Announced October 2023 · All-stock deal · $171/share offer.
 
 [📊 Methodologies](#-valuation-methodologies) · [🔍 Key Findings](#-key-findings) · [📈 Visualizations](#-visualizations) · [📄 Reports](#-downloadable-reports) · [🚀 Quick Start](#-quick-start)
@@ -37,10 +37,10 @@
 
 > **Verdict: A long-duration growth bet on Guyana, not a near-term earnings story.**
 
-- Chevron’s **$171/share offer** implies a modest ~10% premium to Hess’s unaffected price — within historical upstream M&A range but well below precedent mega-deal premiums
-- **Cash-flow methodologies (DCF, LBO)** value Hess significantly *below* the offer price — quantifying the **“Guyana premium”** embedded for undeveloped offshore reserves in the Stabroek Block
+- Chevron’s **$171/share offer** implies a modest ~10% premium to Hess’s unaffected price -within historical upstream M&A range but well below precedent mega-deal premiums
+- **Cash-flow methodologies (DCF, LBO)** value Hess significantly *below* the offer price -quantifying the **“Guyana premium”** embedded for undeveloped offshore reserves in the Stabroek Block
 - **Market-based methodologies** (trading comps, precedent transactions) bracket the deal price; the implied premium range ($168–$183) nearly matches the offer, suggesting the market was already pricing in a takeout
-- The deal is **6.9% dilutive to CVX EPS** at close, requiring ~**$2.6B in annual synergies** to break even on an accretion basis — confirming this is a reserve acquisition, not a margin play
+- The deal is **6.9% dilutive to CVX EPS** at close, requiring ~**$2.6B in annual synergies** to break even on an accretion basis -confirming this is a reserve acquisition, not a margin play
 
 ---
 
@@ -67,14 +67,14 @@ All six outputs are aggregated into a **Football Field chart** showing the full 
 
 | Chart | What It Reveals |
 |-------|-----------------|
-| **Football Field Valuation** | Full range across all 6 methods vs. deal price — where the Guyana premium sits |
-| **DCF Sensitivity Heatmap** | WACC vs. terminal growth rate — how sensitive implied price is to macro assumptions |
+| **Football Field Valuation** | Full range across all 6 methods vs. deal price -where the Guyana premium sits |
+| **DCF Sensitivity Heatmap** | WACC vs. terminal growth rate -how sensitive implied price is to macro assumptions |
 | **Monte Carlo Distribution** | 10,000-path probability distribution of DCF outputs under parameter uncertainty |
 | **UFCF Waterfall Bridge** | EBITDA-to-FCF conversion showing capex and working capital drag |
-| **Tornado Chart** | Ranked single-variable sensitivity — which DCF input drives valuation most |
+| **Tornado Chart** | Ranked single-variable sensitivity -which DCF input drives valuation most |
 | **Trading Comps Scatter** | EV/EBITDA vs. EV/Production for peer E&P universe |
 | **Precedent Transactions** | Historical deal multiples with Hess deal highlighted |
-| **Accretion / Dilution** | CVX EPS impact across synergy scenarios — where breakeven lies |
+| **Accretion / Dilution** | CVX EPS impact across synergy scenarios -where breakeven lies |
 | **WTI Oil Price Chart** | Crude annotated with deal milestones and macro events |
 | **Sector Performance** | Hess vs. CVX vs. XLE since deal announcement |
 
@@ -86,8 +86,8 @@ Three full-length research documents included in the repository:
 
 | Report | Description |
 |--------|-------------|
-| [`Chevron_Hess_$53B_Deal_Analysis.pdf`](./Chevron_Hess_$53B_Deal_Analysis.pdf) | Full deal analysis — valuation, synergies, strategic rationale |
-| [`Chevron_Hess_Mega_Deal_White_Paper.pdf`](./Chevron_Hess_Mega_Deal_White_Paper.pdf) | Executive white paper — deal thesis and market context |
+| [`Chevron_Hess_$53B_Deal_Analysis.pdf`](./Chevron_Hess_$53B_Deal_Analysis.pdf) | Full deal analysis -valuation, synergies, strategic rationale |
+| [`Chevron_Hess_Mega_Deal_White_Paper.pdf`](./Chevron_Hess_Mega_Deal_White_Paper.pdf) | Executive white paper -deal thesis and market context |
 | [`Chev_Hess.pdf`](./Chev_Hess.pdf) | Supplementary analysis |
 
 ---
@@ -97,7 +97,7 @@ Three full-length research documents included in the repository:
 ```
 hess-chevron-valuation-analysis/
 │
-├── 📓 hess_chevron_analysis.ipynb     # Main notebook — 49 cells, 8 sections
+├── 📓 hess_chevron_analysis.ipynb     # Main notebook -49 cells, 8 sections
 ├── 📁 config/
 │   ├── constants.py                   # Hardcoded financials, deal terms, precedent comps
 │   └── fallback_data.py               # Cached peer data for offline execution
@@ -123,7 +123,7 @@ hess-chevron-valuation-analysis/
 | SEC EDGAR (10-K filings) | ❌ Not required | Hess historical financials FY2020–FY2022 |
 | [Damodaran Online](https://pages.stern.nyu.edu/~adamodar/) | ❌ Not required | Beta estimates, ERP, cost of capital inputs |
 
-> **FRED API key is free** — get one at [fred.stlouisfed.org](https://fred.stlouisfed.org/docs/api/api_key.html). The notebook runs fully without it using cached fallback data.
+> **FRED API key is free** -get one at [fred.stlouisfed.org](https://fred.stlouisfed.org/docs/api/api_key.html). The notebook runs fully without it using cached fallback data.
 
 ---
 
